@@ -1,0 +1,12 @@
+Source: ros-kinetic-recordit
+Section: misc
+Priority: extra
+Maintainer: Jonathan Hechtbauer <jonathan.hechtbauer@ipa.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-rostest, ros-kinetic-xacro
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-recordit
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-enum34, python-simplejson, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-std-srvs, ros-kinetic-tf, ros-kinetic-urdfdom-py
+Description: Record the joint_states and/or the mobile changes (via tf) of a ROS system as three.js animation
